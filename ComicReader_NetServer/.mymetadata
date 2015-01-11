@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ComicReader_NetServer"
+  id="myeclipse.1347194817772"
+  context-root="/ComicReader_NetServer"
+  j2ee-spec="5.0"
+  archive="ComicReader_NetServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

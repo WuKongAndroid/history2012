@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 以下几个TextView根据需求设置可见性 -->
+    <!-- 图书压缩包路径 -->
+
+    <TextView
+        android:id="@+id/bookZipPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 图书ID -->
+
+    <TextView
+        android:id="@+id/bookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 图书作者 -->
+
+    <TextView
+        android:id="@+id/bookWriter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 作者国家 -->
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 评分分数 -->
+
+    <TextView
+        android:id="@+id/bookGradeNums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 评分率 -->
+
+    <TextView
+        android:id="@+id/bookGradeRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 评分人数 -->
+
+    <TextView
+        android:id="@+id/bookGradeRater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 类别 -->
+
+    <TextView
+        android:id="@+id/bookCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+    <!-- 是否完结 -->
+
+    <TextView
+        android:id="@+id/bookIsOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="18sp" />
+
+</LinearLayout>

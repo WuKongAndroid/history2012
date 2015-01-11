@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:id="@+id/hall"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            layout="@layout/layout_hall" />
+
+    </RelativeLayout>
+
+    <!-- 图书列表 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rr"
+        android:layout_marginBottom="53dip"
+        android:background="@drawable/book_bg" 
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:divider="@drawable/splitline"
+            android:fadingEdge="none"
+            android:headerDividersEnabled="false"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+    <!-- 底部菜单导航 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+
+        <include
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_bottom" />
+    </RelativeLayout>
+
+</RelativeLayout>

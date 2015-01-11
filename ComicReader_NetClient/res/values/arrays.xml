@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pageSkip">
+        <item>第一页</item>
+        <item>上一页</item>
+        <item>下一页</item>
+        <item>最后一页</item>
+    </string-array>
+    <string-array name="moreSetUp">
+        <item>定时阅览</item>
+        <item>漫画旋转</item>
+    </string-array>
+    <string-array name="fixTimeToBrowse">
+        <item>手动：</item>
+        <item>3秒钟：</item>
+        <item>5秒钟：</item>
+    </string-array>
+    <string-array name="bookmarkSetUp">
+        <item>查看</item>
+        <item>删除</item>
+        <item>删除所有</item>
+    </string-array>
+    <string-array name="comicRotation">
+        <item>向左旋转45度：</item>
+        <item>向右旋转45度：</item>
+    </string-array>
+    <string-array name="cities">
+        <item>西安市</item>
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>广州市</item>
+    </string-array>
+    <string-array name="xian">
+        <item>高新区</item>
+        <item>雁塔区</item>
+        <item>莲湖区</item>
+        <item>未央区</item>
+        <item>新城区</item>
+        <item>碑林区</item>
+        <item>长安区</item>
+    </string-array>
+    <string-array name="beijing">
+        <item>东城区</item>
+        <item>西城区</item>
+        <item>海淀区</item>
+        <item>朝阳区</item>
+        <item>丰台区</item>
+        <item>通州区</item>
+    </string-array>
+    <string-array name="shanghai">
+        <item>浦东新区</item>
+        <item>静安区</item>
+        <item>徐汇区</item>
+        <item>闸北区</item>
+        <item>闵行区</item>
+        <item>长宁区</item>
+    </string-array>
+    <string-array name="guangzhou">
+        <item>天河区</item>
+        <item>花都区</item>
+        <item>南沙区</item>
+        <item>白云区</item>
+        <item>萝岗区</item>
+        <item>荔湾区</item>
+    </string-array>
+    <string-array name="coll_dele">
+        <item>删除该收藏</item>
+        <item>清空收藏夹</item>
+    </string-array>
+    <string-array name="rece_dele">
+        <item>删除该记录</item>
+        <item>清空所有记录</item>
+    </string-array>
+    <string-array name="menumore">
+        <item>关于</item>
+        <item>反馈</item>
+        <item>退出</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+
+        <!-- 底部导航条 -->
+        <!-- 首页 -->
+
+        <ImageButton
+            android:id="@+id/bookIndex"
+            android:layout_width="63dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bottom_home" />
+        <!-- 分割条1 -->
+
+        <ImageView
+            android:id="@+id/book_bg1"
+            android:layout_width="1dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bookIndex"
+            android:background="@drawable/bottom_bg_bar" />
+        <!-- 书库 -->
+
+        <ImageButton
+            android:id="@+id/bookShelf"
+            android:layout_width="63dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/book_bg1"
+            android:background="@drawable/bottom_shelf" />
+        <!-- 分割条2 -->
+
+        <ImageView
+            android:id="@+id/book_bg2"
+            android:layout_width="1dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bookShelf"
+            android:background="@drawable/bottom_bg_bar" />
+        <!-- 浏览 -->
+
+        <ImageButton
+            android:id="@+id/bookBrowser"
+            android:layout_width="63dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/book_bg2"
+            android:background="@drawable/bottom_browser" />
+        <!-- 分割条3 -->
+
+        <ImageView
+            android:id="@+id/book_bg3"
+            android:layout_width="1dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bookBrowser"
+            android:background="@drawable/bottom_bg_bar" />
+        <!-- 搜索 -->
+
+        <ImageButton
+            android:id="@+id/bookSearch"
+            android:layout_width="63dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/book_bg3"
+            android:background="@drawable/bottom_search" />
+        <!-- 分割条4 -->
+
+        <ImageView
+            android:id="@+id/book_bg4"
+            android:layout_width="1dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bookSearch"
+            android:background="@drawable/bottom_bg_bar" />
+        <!-- 更多 -->
+
+        <ImageButton
+            android:id="@+id/bookMore"
+            android:layout_width="63dip"
+            android:layout_height="49dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/book_bg4"
+            android:background="@drawable/bottom_more" />
+    </RelativeLayout>
+
+</RelativeLayout>

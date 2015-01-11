@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/header">
+    <!--顶部关于-->
+	<RelativeLayout 
+		android:layout_width="match_parent"
+    	android:layout_height="35dip"
+		android:layout_alignParentTop="true"
+		style="@style/style_advise"
+	> 
+	<TextView 
+		    android:text="@string/about"
+		    android:id="@+id/advise"
+		  	style="@style/style6"
+		  	android:layout_width="60dip"
+		  	android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+		  />
+    </RelativeLayout>
+
+	<!--关于开始--> 
+	<RelativeLayout
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+	  	android:layout_marginTop="38dip"
+	  	android:layout_marginLeft="5dip"
+	  	android:layout_marginRight="5dip"
+	  	android:layout_marginBottom="53dip" 	
+		android:layout_alignParentTop="true"
+	>
+	    <TextView
+		  	android:text="@string/about_title"
+		    android:id="@+id/about_title"
+		  	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+		  	android:layout_marginLeft="5dip"
+		  	android:layout_marginRight="5dip"
+		  	android:layout_marginTop="25dip" 
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+	  	/>
+	     <TextView
+		  	android:text="@string/about_body"
+		    android:id="@+id/about_body"
+		  	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+		  	android:layout_marginLeft="5dip"
+		  	android:layout_marginRight="5dip"
+		  	android:layout_marginTop="20dip" 
+			android:layout_below="@id/about_title"
+			android:layout_centerHorizontal="true"
+	  	/>
+	     <TextView
+		  	android:text="@string/about_bottom"
+		    android:id="@+id/about_bottom"
+		  	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+		  	android:layout_marginLeft="5dip"
+		  	android:layout_marginRight="5dip"
+		  	android:layout_marginTop="25dip" 
+			android:layout_below="@id/about_body"
+			android:layout_centerHorizontal="true"
+	  	/>
+	</RelativeLayout>
+	<!--关于结束--> 
+	<!-- 底部 -->
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+
+        <include
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_bottom" />
+    </RelativeLayout>
+    <!-- 底部 -->
+</RelativeLayout>

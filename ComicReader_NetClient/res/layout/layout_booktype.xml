@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/hall"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        layout="@layout/layout_hall" />
+
+    <include
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hall"
+        layout="@layout/layout_header" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:background="@color/header"
+        android:columnWidth="90dip"
+        android:gravity="center"
+        android:horizontalSpacing="10dip"
+        android:listSelector="@drawable/grid_selector_background"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="25dip" >
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+
+        <include
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_bottom" />
+    </RelativeLayout>
+
+</RelativeLayout>

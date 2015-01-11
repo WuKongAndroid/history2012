@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="true"
+    android:background="@color/drakgray" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="1dip" >
+
+        <ImageView
+            android:layout_width="323dip"
+            android:layout_height="44dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/search_bg" />
+
+        <EditText
+            android:id="@+id/keyWords"
+            android:layout_width="260dip"
+            android:layout_height="39dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="6dip"
+            android:focusable="true"
+            android:hint="@string/searchHint" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/search" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/searchRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:checkedButton="@+id/byName"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/byName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/byName" />
+
+        <RadioButton
+            android:id="@+id/byWriter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/byWriter" />
+
+        <RadioButton
+            android:id="@+id/byContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/byContent" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchRg"
+        android:layout_marginBottom="53dip"
+        android:background="@drawable/book_bg" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:divider="@drawable/splitline"
+            android:fadingEdge="none"
+            android:headerDividersEnabled="false"
+            android:scrollingCache="false" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_bottom" />
+
+</RelativeLayout>

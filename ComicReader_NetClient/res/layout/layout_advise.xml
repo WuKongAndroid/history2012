@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_bg" >
+
+    <!-- 顶部反馈 -->
+
+    <RelativeLayout
+        style="@style/style_advise"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/advise"
+            style="@style/style6"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/feedback" />
+    </RelativeLayout>
+    <!-- 反馈开始 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="53dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="38dip" >
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="280dip"
+            android:layout_height="130dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:gravity="top|left"
+            android:hint="@string/advise_Hint" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginLeft="130dip"
+            android:layout_marginTop="3dip"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="3dip"
+            android:layout_toRightOf="@id/cancel"
+            android:text="@string/advise_Submit" />
+
+        <SlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:content="@+id/drawerContent"
+            android:handle="@+id/handle"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_up" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/drawerContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <include
+                    android:id="@+id/infoEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_userinfo" />
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+    <!-- 反馈结束 -->
+    <!-- 底部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+
+        <include
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_bottom" />
+    </RelativeLayout>
+    <!-- 底部 -->
+
+</RelativeLayout>

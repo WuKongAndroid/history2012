@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/book_bg" >
+
+        <!-- 返回按钮 -->
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="35dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="260dip"
+            android:background="@drawable/returnback" />
+    </RelativeLayout>
+    <!-- 漫画书内容 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/header"
+        android:focusable="true" >
+
+        <!-- 漫画书封皮 -->
+
+        <ImageView
+            android:id="@+id/bookCover"
+            android:layout_width="135dip"
+            android:layout_height="135dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:focusable="false" />
+
+        <!-- 书名 -->
+
+        <TextView
+            android:id="@+id/bookName"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@id/bookCover" />
+
+        <TextView
+            android:id="@+id/updateTime"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookName"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/bookCover" />
+
+        <ImageButton
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateTime"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/bookCover"
+            android:background="@drawable/book_coll" />
+
+        <ImageButton
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateTime"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/collection"
+            android:background="@drawable/book_read" />
+
+        <RatingBar
+            android:id="@+id/bookGrade"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/read"
+            android:layout_marginLeft="160dip"
+            android:layout_marginTop="15dip"
+            android:focusable="false"
+            android:isIndicator="true" />
+        <!-- 图书内容 -->
+
+        <TextView
+            android:id="@+id/bookContent"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookCover"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/bookContent"
+            android:layout_below="@id/bookContent"
+            android:background="@color/header" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_bookdetails" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- download icon -->
+
+    <ImageView
+        android:id="@+id/download_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <!-- 底部菜单导航 -->
+
+    <TextView
+        android:id="@+id/download_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/topBar"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="390dip"
+        android:textColor="#FF0000"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/download_percent"
+        android:layout_marginTop="10dip"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+
+        <include
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_bottom" />
+    </RelativeLayout>
+
+</RelativeLayout>

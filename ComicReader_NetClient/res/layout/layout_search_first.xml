@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header"
+    android:descendantFocusability="blocksDescendants" >
+
+    <!-- 导航标题1 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/book_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_alltype"
+            android:textSize="22sp" />
+    </FrameLayout>
+    <!-- 漫画书内容 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="65dip"
+        android:background="@color/header"
+        android:focusable="true" >
+
+        <!-- 漫画书封皮 -->
+
+        <ImageView
+            android:id="@+id/bookCover"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:focusable="false" />
+
+        <!-- 书名 -->
+
+        <TextView
+            android:id="@+id/bookName"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/bookCover" />
+
+        <TextView
+            android:id="@+id/updateTime"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="178dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/bookCover" />
+
+        <RatingBar
+            android:id="@+id/bookGrade"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateTime"
+            android:layout_marginLeft="178dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/bookCover" />
+        <!-- 图书内容 -->
+
+        <TextView
+            android:id="@+id/bookContent"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookCover"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

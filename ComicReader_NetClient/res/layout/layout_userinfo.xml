@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CFAFB1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab_add"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView style="@style/divider" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="30dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        style="@style/editTextStyle"
+                        android:layout_marginTop="18dip"
+                        android:hint="请输入昵称" />
+
+                    <RadioGroup
+                        android:id="@+id/gender_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_name"
+                        android:layout_marginLeft="45dip"
+                        android:layout_marginTop="12dip"
+                        android:checkedButton="@+id/male"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/male" />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/female" />
+                    </RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/user_icon"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dip"
+                        android:src="@drawable/radiance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/user_icon"
+                        android:layout_below="@id/user_icon"
+                        android:text="点击头像更新"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <ImageView style="@style/divider" />
+
+                <EditText
+                    android:id="@+id/user_birth"
+                    style="@style/editTextStyle"
+                    android:hint="点击选择生日" />
+
+                <ImageView style="@style/divider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="请选择现居地：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/citySpinner"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/cities"
+                        android:prompt="@string/city_prompt" />
+
+                    <Spinner
+                        android:id="@+id/areaSpinner"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:prompt="@string/area_prompt" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView style="@style/divider" />
+
+                <EditText
+                    android:id="@+id/user_email"
+                    style="@style/editTextStyle"
+                    android:hint="请输入Email" />
+
+                <ImageView style="@style/divider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请选择您喜欢的类别：" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+
+                        <CheckBox
+                            android:id="@+id/cb2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+
+                        <CheckBox
+                            android:id="@+id/cb3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+
+                        <CheckBox
+                            android:id="@+id/cb5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+
+                        <CheckBox
+                            android:id="@+id/cb6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+                    </TableRow>
+                </TableLayout>
+
+                <ImageView style="@style/divider" />
+
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#B8B8DC"
+                    android:text="提交信息"
+                    android:textColor="#AE0000"
+                    android:textSize="23sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

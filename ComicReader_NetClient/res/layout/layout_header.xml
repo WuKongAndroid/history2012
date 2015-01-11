@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_home_gray" />
+
+        <ImageView
+            android:id="@+id/book_bg1"
+            android:layout_width="5dip"
+            android:layout_height="49dip"
+            android:layout_alignBottom="@id/home"
+            android:layout_toRightOf="@id/home"
+            android:background="@drawable/bottom_bg_bar" />
+
+        <ImageButton
+            android:id="@+id/recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/book_bg1"
+            android:background="@drawable/tab_recommend_gray" />
+
+        <ImageView
+            android:id="@+id/book_bg2"
+            android:layout_width="5dip"
+            android:layout_height="49dip"
+            android:layout_alignBottom="@id/home"
+            android:layout_toRightOf="@id/recommend"
+            android:background="@drawable/bottom_bg_bar" />
+
+        <ImageButton
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/book_bg2"
+            android:background="@drawable/tab_order_gray" />
+
+        <ImageView
+            android:id="@+id/book_bg3"
+            android:layout_width="5dip"
+            android:layout_height="49dip"
+            android:layout_alignBottom="@id/order"
+            android:layout_toRightOf="@id/order"
+            android:background="@drawable/bottom_bg_bar" />
+
+        <ImageButton
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/book_bg3"
+            android:background="@drawable/tab_type_gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:background="#ffffff"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+</LinearLayout>

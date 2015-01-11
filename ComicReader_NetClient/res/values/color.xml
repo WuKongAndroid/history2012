@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#cccccc</color>
+    <color name="drakgray">#404040ff</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="header">#ffffff</color>
+    <color name="book">#000000</color>
+    <color name="index_body">#000000</color>
+    <color name="index_bottom">#000000</color>
+    <color name="book_bg">#CECBCE</color>
+
+</resources>

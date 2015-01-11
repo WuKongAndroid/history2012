@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 漫画书内容 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/header" >
+
+        <ImageView
+            android:id="@+id/bookCover"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip" />
+
+        <!-- 书名 -->
+
+        <TextView
+            android:id="@+id/bookName"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/bookCover" />
+
+        <TextView
+            android:id="@+id/updateTime"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/bookCover" />
+
+        <RatingBar
+            android:id="@+id/bookGrade"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateTime"
+            android:layout_marginLeft="135dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/bookCover" />
+        <!-- 图书内容 -->
+
+        <TextView
+            android:id="@+id/bookContent"
+            style="@style/style_book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookGrade"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@id/bookCover" />
+    </RelativeLayout>
+
+</LinearLayout>
